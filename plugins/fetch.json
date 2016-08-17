@@ -1,0 +1,28 @@
+{
+    "cc.fovea.cordova.purchase": {
+        "source": {
+            "type": "registry",
+            "id": "cc.fovea.cordova.purchase"
+        },
+        "is_top_level": true,
+        "variables": {
+            "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh6J93NR+3pyEqk/3RDfOJ0hlhnQeRXKShAosvlQ1S7TOxdOBXK6pGFU4SWAFg3Bl0fFY8MbKDdyWI5+Rsq7DE0+/BM4vqcpdL6ZYhzPam4+jEntF4SG8m1d2ibKA9p5S/QydlsYChZ4On8tbqivCR5wagKUHUIpl3dcztAVHxhXVWDrTmNEetEi9bmjCAN9EF9Bo5tJoWaHjrlfJebcC1VYidRo/BWHUqtz17zwuhvEXaq0pKj2ArFxKsJqmKhgwNeWLTp6jHqoc7L/Ah4/PbxqmxTUVt3L9iUlf0+ZzZG5pVL9YOnisWcyQLyUP5xgdYVX89DedNONQOcOfB9XmIwIDAQAB"
+        }
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-app-version": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-app-version"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
