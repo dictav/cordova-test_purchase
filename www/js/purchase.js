@@ -1,7 +1,14 @@
 document.addEventListener('deviceready', init, false);
 var btn = document.getElementById('purchase_button')
 btn.addEventListener('click', function(){
-  store.order('coin100')
+  // 1st click, buy coin100
+  // 2nd click, consume coin100
+  var product = store.get('coin100')
+  if (product.state === store.APPROVED) {
+    product.finish()
+  } else {
+    store.order('coin100')
+  }
 })
 
 function log(msg, obj) {
@@ -17,23 +24,21 @@ function init() {
   log("Register coins")
   store.register({
     id: "coin100",
-    alias: "100 coins",
     type: store.CONSUMABLE
   });
 
   store.register({
     id: "coin200",
-    alias: "200 coins",
     type: store.CONSUMABLE
   });
 
-  store.when('100 coins').updated(function(){
-    var product = store.get('100 coins')
+  store.when('coin100').updated(function(){
+    var product = store.get('coin100')
     log('100 coins updated', product)
   })
 
-  store.when('200 coins').updated(function(){
-    var product = store.get('200 coins')
+  store.when('coin200').updated(function(){
+    var product = store.get('coin200')
     log('200 coins updated', product)
   })
 
